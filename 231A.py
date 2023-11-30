@@ -1,11 +1,9 @@
 n = int(input())
 solution = 0
-for p in range(n):
-    i = 0
-    for _ in range(3):
-        if int(input()) == 1:
-            i += 1
-    if i >= 2:
+for _ in range(n):
+    v = str(input())
+    v = int(v[0]) + int(v[2]) + int(v[4])
+    if v >= 2:
         solution += 1
 
 print(solution)
