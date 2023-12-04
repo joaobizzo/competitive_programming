@@ -1,3 +1,8 @@
 n, k = input().split(' ')
-print(n)
-print(k)
+p = 0
+for value in n:
+    a = input()
+    print(a)
+    if a > k:
+        p += 1
+
