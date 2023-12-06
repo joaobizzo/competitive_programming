@@ -1,14 +1,10 @@
-n, k = input().split(' ')
-k = int(k)
-p = 0
-for value in n:
-    a = input()
-    for ai in a:
-        if ai.isnumeric():
-            ai = int(ai)
-            
+# n = participants / k = position / a = score / ai = points / result = how many advence
+n, k = map(int, input().split(' '))
+a = list(map(int, input().split(' ')))
 
-            if ai > k:
-                p += 1
-print(p)
+result = 0
+for ai in a:
+    if ai >= a[k-1] and ai != 0:
+        result += 1
 
+print(result)
